@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Box</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Verify your Account</h2>
+        <small>We need to verify your account to be able to join this game and start playing</small>
+        <small>Verify your account help us maintaining a good enviroment for our player and protecting against cheating and smurf account</small>
+
+        <form action="" method="">
+
+            <div class="form-group">
+                <label for="country" class="country">Country code</label>
+                <select name="country" id="country" class="form-select">
+                    <option selected disabled>Select your country</option>
+                    <option>Myanmar</option>
+                    <option>Thiland</option>
+                    <option>India</option>
+                    <option>Singpore</option>
+                    <option>USA</option>
+                </select>
+            </div>
+
+            <div class="form-group material">
+                <input type="number" name="phone" id="phone" class="form-control" autocomplete="off" required >
+                <label for="phone" class="phonelabel">Phone Number</label>
+            </div>
+
+            <button id="cancelbtn" class="cancel btn">Cancel Verificaion</button>
+            <button id="reqbtn" class="req btn" >Request Code</button>
+        </form>
+
+        <div class="code-container">
+            <h3>Enter your code</h3>
+
+            <input type="number" id="code1" name="code" class="code" autocomplete="off" min="0" max="9" required>
+            <input type="number" id="code2" name="code" class="code" autocomplete="off" min="0" max="9" required>
+            <input type="number" id="code3" name="code" class="code" autocomplete="off" min="0" max="9" required>
+            <input type="number" id="code4" name="code" class="code" autocomplete="off" min="0" max="9" required>
+            <input type="number" id="code5" name="code" class="code" autocomplete="off" min="0" max="9" required>
+            <input type="number" id="code6" name="code" class="code" autocomplete="off" min="0" max="9" required>
+        </div>
+    </div>
+
+
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

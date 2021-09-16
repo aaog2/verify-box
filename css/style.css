@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nova Square', cursive;
+    background-color: #2c2c3b;
+    color: #fff;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 600px;
+    background-color: #464652;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+small{
+    margin:0;
+    opacity: 0.3;
+}
+
+form{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form-group{
+    margin: 20px 0;
+    position: relative;
+}
+
+label{
+    display: block;
+}
+
+.form-select{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #2c2c3b;
+    color: #f4f4f4;
+    border-color: rgba(255,255,255,0.3);
+}
+
+.form-select:focus{
+    outline: 0;
+}
+
+.form-control{
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: #f4f4f4;
+    border: none;
+    border-bottom: 3px solid #2c2c3b;
+
+    -moz-appearance: textfield;
+}
+
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.phonelabel{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+}
+
+.form-control:focus{
+    outline: 0;
+}
+
+.form-group.material{
+    margin-top: 50px;
+}
+
+.phonelabel span{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.form-group input:focus + label span,
+.form-group input:valid + label span{ /*valid ma par yin span ka out pyan kya*/
+    color: #ec8405;
+    transform: translateY(-30px);
+}
+
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Nova Square', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+    float: right;
+}
+
+.cancel{
+    background-color: #2c2c3b;
+    color: #f4f4f4;
+}
+
+.req{
+    background-color: #ec8405;
+    color: #2c2c3b;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.code-container{
+    padding: 20px 0;
+
+}
+
+h3{
+    text-align: center;
+}
+
+.code{
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+    border: none;
+    border-bottom: 2px solid #2c2c3b;
+
+    -moz-appearance: textfield;
+}
+
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+.code:focus{
+    outline: 0;
+}
+
+.code:valid{
+    border-bottom: 2px solid #ec8405;
+}
+
+
